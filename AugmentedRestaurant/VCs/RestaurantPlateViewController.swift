@@ -1,3 +1,8 @@
+
+
+
+
+
 //
 //  RestaurantPlateViewController.swift
 //  AugmentedRestaurant
@@ -9,22 +14,26 @@
 import UIKit
 
 class RestaurantPlateViewController: UIViewController {
+    var plate: Plate!
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        guard let plate = self.plate, let nameLabel = self.nameLabel, let descriptionLabel = self.descriptionLabel else { return }
+        nameLabel.text = plate.plateName
+        descriptionLabel.text = plate.description
     }
-    */
-
+    
+    
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

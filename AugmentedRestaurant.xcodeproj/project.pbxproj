@@ -14,7 +14,6 @@
 		075F7A0E2485C5D800F8ED6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F7A0C2485C5D800F8ED6D /* LaunchScreen.storyboard */; };
 		075F7A2D2485D2B100F8ED6D /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A162485D2AE00F8ED6D /* FocusSquareSegment.swift */; };
 		075F7A2E2485D2B100F8ED6D /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A172485D2AE00F8ED6D /* FocusSquare.swift */; };
-		075F7A2F2485D2B100F8ED6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A182485D2AE00F8ED6D /* ViewController.swift */; };
 		075F7A302485D2B100F8ED6D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A1A2485D2AE00F8ED6D /* Utilities.swift */; };
 		075F7A312485D2B100F8ED6D /* ViewController+ObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A1B2485D2AE00F8ED6D /* ViewController+ObjectSelection.swift */; };
 		075F7A322485D2B100F8ED6D /* ThresholdPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A1C2485D2AE00F8ED6D /* ThresholdPanGesture.swift */; };
@@ -42,6 +41,7 @@
 		075F7A5C2486A7DD00F8ED6D /* EmotionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075F7A5A2486A7DD00F8ED6D /* EmotionsCell.xib */; };
 		075F7A5F2486C94300F8ED6D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A5E2486C94300F8ED6D /* Category.swift */; };
 		075F7A612486C95200F8ED6D /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A602486C95200F8ED6D /* Restaurant.swift */; };
+		075F7A622486E48800F8ED6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A412485D41200F8ED6D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -333,7 +333,6 @@
 				075F7A4A2486A56D00F8ED6D /* EmotionDetectorViewController.swift in Sources */,
 				075F7A362485D2B100F8ED6D /* VirtualObjectLoader.swift in Sources */,
 				075F7A4C2486A58100F8ED6D /* RestaurantMapViewController.swift in Sources */,
-				075F7A2F2485D2B100F8ED6D /* ViewController.swift in Sources */,
 				075F7A302485D2B100F8ED6D /* Utilities.swift in Sources */,
 				075F7A462486A55900F8ED6D /* RestauranteDetailViewController.swift in Sources */,
 				075F7A5B2486A7DD00F8ED6D /* EmotionsCell.swift in Sources */,
@@ -346,6 +345,7 @@
 				075F7A512486A77A00F8ED6D /* CategoriesCell.swift in Sources */,
 				075F7A322485D2B100F8ED6D /* ThresholdPanGesture.swift in Sources */,
 				075F7A332485D2B100F8ED6D /* ViewController+Actions.swift in Sources */,
+				075F7A622486E48800F8ED6D /* ViewController.swift in Sources */,
 				075F7A2D2485D2B100F8ED6D /* FocusSquareSegment.swift in Sources */,
 				075F7A312485D2B100F8ED6D /* ViewController+ObjectSelection.swift in Sources */,
 				075F7A382485D2B100F8ED6D /* VirtualObjectARView.swift in Sources */,
