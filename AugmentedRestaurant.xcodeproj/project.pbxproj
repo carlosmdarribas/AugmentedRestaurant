@@ -40,6 +40,8 @@
 		075F7A572486A79B00F8ED6D /* FeaturedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075F7A552486A79B00F8ED6D /* FeaturedCell.xib */; };
 		075F7A5B2486A7DD00F8ED6D /* EmotionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A592486A7DD00F8ED6D /* EmotionsCell.swift */; };
 		075F7A5C2486A7DD00F8ED6D /* EmotionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075F7A5A2486A7DD00F8ED6D /* EmotionsCell.xib */; };
+		075F7A5F2486C94300F8ED6D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A5E2486C94300F8ED6D /* Category.swift */; };
+		075F7A612486C95200F8ED6D /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A602486C95200F8ED6D /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		075F7A552486A79B00F8ED6D /* FeaturedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedCell.xib; sourceTree = "<group>"; };
 		075F7A592486A7DD00F8ED6D /* EmotionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsCell.swift; sourceTree = "<group>"; };
 		075F7A5A2486A7DD00F8ED6D /* EmotionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmotionsCell.xib; sourceTree = "<group>"; };
+		075F7A5E2486C94300F8ED6D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		075F7A602486C95200F8ED6D /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		075F7A002485C5D600F8ED6D /* AugmentedRestaurant */ = {
 			isa = PBXGroup;
 			children = (
+				075F7A5D2486C93400F8ED6D /* Models */,
 				075F7A4D2486A74500F8ED6D /* Cells */,
 				075F7A012485C5D600F8ED6D /* AppDelegate.swift */,
 				075F7A422486A46200F8ED6D /* VCs */,
@@ -238,6 +243,15 @@
 			path = EmotionsCell;
 			sourceTree = "<group>";
 		};
+		075F7A5D2486C93400F8ED6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				075F7A5E2486C94300F8ED6D /* Category.swift */,
+				075F7A602486C95200F8ED6D /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,6 +337,7 @@
 				075F7A302485D2B100F8ED6D /* Utilities.swift in Sources */,
 				075F7A462486A55900F8ED6D /* RestauranteDetailViewController.swift in Sources */,
 				075F7A5B2486A7DD00F8ED6D /* EmotionsCell.swift in Sources */,
+				075F7A5F2486C94300F8ED6D /* Category.swift in Sources */,
 				075F7A022485C5D600F8ED6D /* AppDelegate.swift in Sources */,
 				075F7A042485C5D600F8ED6D /* SceneDelegate.swift in Sources */,
 				075F7A482486A56400F8ED6D /* RestaurantPlateViewController.swift in Sources */,
@@ -339,6 +354,7 @@
 				075F7A562486A79B00F8ED6D /* FeaturedCell.swift in Sources */,
 				075F7A3F2485D2B100F8ED6D /* StatusViewController.swift in Sources */,
 				075F7A2E2485D2B100F8ED6D /* FocusSquare.swift in Sources */,
+				075F7A612486C95200F8ED6D /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
