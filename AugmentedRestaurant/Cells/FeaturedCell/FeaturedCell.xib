@@ -29,7 +29,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddw-i8-s7H">
-                                    <rect key="frame" x="0.0" y="0.0" width="270" height="17"/>
+                                    <rect key="frame" x="0.0" y="3" width="270" height="17"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -43,9 +43,9 @@
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="ddw-i8-s7H" secondAttribute="trailing" id="7ra-Yv-l3W"/>
                                 <constraint firstItem="cvU-j2-4PW" firstAttribute="centerX" secondItem="Nn9-YZ-HN1" secondAttribute="centerX" id="Sfo-e9-hU8"/>
-                                <constraint firstItem="ddw-i8-s7H" firstAttribute="top" secondItem="Nn9-YZ-HN1" secondAttribute="top" id="U4w-Rk-aEr"/>
+                                <constraint firstItem="ddw-i8-s7H" firstAttribute="top" secondItem="Nn9-YZ-HN1" secondAttribute="top" constant="3" id="U4w-Rk-aEr"/>
                                 <constraint firstItem="ddw-i8-s7H" firstAttribute="leading" secondItem="Nn9-YZ-HN1" secondAttribute="leading" id="Ztt-2U-49w"/>
-                                <constraint firstItem="cvU-j2-4PW" firstAttribute="top" secondItem="ddw-i8-s7H" secondAttribute="bottom" constant="-6" id="iUd-ef-6zG"/>
+                                <constraint firstItem="cvU-j2-4PW" firstAttribute="top" secondItem="ddw-i8-s7H" secondAttribute="bottom" constant="-9" id="iUd-ef-6zG"/>
                             </constraints>
                         </view>
                         <constraints>

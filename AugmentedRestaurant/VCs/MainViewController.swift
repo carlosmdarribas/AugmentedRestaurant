@@ -81,6 +81,8 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         switch collectionView {
             case self.categoriesCV:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoriesCell", for: indexPath) as! CategoriesCell
+                cell.layer.cornerRadius = 10
+                
                 cell.categoryLabel.text = self.categories[indexPath.row].name
                 cell.plateImage.image = self.categories[indexPath.row].image
                 return cell
@@ -89,6 +91,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "featuredCell", for: indexPath) as! FeaturedCell
                 cell.featuredPageControl.currentPage = indexPath.row
                 cell.featuredPageControl.numberOfPages = 2
+                cell.layer.cornerRadius = 10
                 
                 cell.featuredNameLabel.text = self.restaurants[indexPath.row].name
                 cell.featuredImage.image = self.restaurants[indexPath.row].image
@@ -101,6 +104,20 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
                 return cell
                 
             default: return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch collectionView {
+            case self.featuringCV:
+                guard let detailView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "restaurantDetail") as? RestauranteDetailViewController else { return }
+                
+                detailView.modalPresentationStyle = .fullScreen
+                detailView.restaurant = self.restaurants[indexPath.row]
+            
+                self.show(detailView, sender: self)
+            
+        default: return
         }
     }
 }
