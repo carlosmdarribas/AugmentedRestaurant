@@ -107,7 +107,6 @@ extension RestauranteDetailViewController: UICollectionViewDataSource, UICollect
             case self.featuredCV:
                 guard let detailView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "restaurantPlateVC") as? RestaurantPlateViewController else { return }
                 
-                detailView.modalPresentationStyle = .fullScreen
             
                 self.show(detailView, sender: self)
             

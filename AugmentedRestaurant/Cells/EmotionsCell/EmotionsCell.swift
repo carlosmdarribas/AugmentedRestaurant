@@ -22,6 +22,7 @@ class EmotionsCell: UICollectionViewCell {
             case .angry:  image = #imageLiteral(resourceName: "angry")
             case .normal: image = #imageLiteral(resourceName: "normal.png")
             case .happy:  image = #imageLiteral(resourceName: "happy.png")
+            case .newTry:  image = #imageLiteral(resourceName: "newTry")
         }
         
         self.emotionImage.image = image

@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
                               Category(name: "Española", image: #imageLiteral(resourceName: "spanish")),
                               Category(name: "Japonés", image: #imageLiteral(resourceName: "japan"))]
     
-    private var emotions:[emotions] = [.angry, .normal, .normal, .happy]
+    private var emotions:[emotions] = [.angry, .normal, .happy, .newTry]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,10 +112,15 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             case self.featuringCV:
                 guard let detailView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "restaurantDetail") as? RestauranteDetailViewController else { return }
                 
-                detailView.modalPresentationStyle = .fullScreen
                 detailView.restaurant = self.restaurants[indexPath.row]
             
                 self.show(detailView, sender: self)
+            
+        case self.emotionsCV:
+            if self.emotions[indexPath.row] == .newTry {
+                guard let emotionsView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "emotionVC") as? EmotionDetectorViewController else { return }
+                self.show(emotionsView, sender: self)
+            }
             
         default: return
         }

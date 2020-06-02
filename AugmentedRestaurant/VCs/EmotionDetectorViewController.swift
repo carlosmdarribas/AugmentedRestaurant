@@ -81,5 +81,5 @@ extension EmotionDetectorViewController: AVCaptureVideoDataOutputSampleBufferDel
 
 
 enum emotions {
-    case angry, normal, happy
+    case angry, normal, happy, newTry
 }
