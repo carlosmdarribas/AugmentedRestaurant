@@ -15,9 +15,9 @@ class Restaurant {
     var image: UIImage
     var coordinates: CLLocationCoordinate2D
     
-    var plates = [Plates]()
+    var plates = [Plate]()
     
-    init(name: String, image: UIImage, coordinates: CLLocationCoordinate2D, plates: [Plates]? = nil) {
+    init(name: String, image: UIImage, coordinates: CLLocationCoordinate2D, plates: [Plate]? = nil) {
         self.name = name
         self.image = image
         self.coordinates = coordinates
@@ -27,7 +27,7 @@ class Restaurant {
     }
 }
 
-class Plates {
+class Plate {
     var plateName: String
     var plateImage: UIImage
     var description: String

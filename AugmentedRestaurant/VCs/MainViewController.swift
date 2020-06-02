@@ -7,18 +7,25 @@
 //
 
 import UIKit
+import MapKit
 
 class MainViewController: UIViewController {
-    //private let sectionInsets = UIEdgeInsets(top: 00.0, left: 0.0, bottom: 0.0, right: 0.0)
-
+    // Outlets
     @IBOutlet weak var categoriesCV: UICollectionView!
     @IBOutlet weak var featuringCV: UICollectionView!
     @IBOutlet weak var emotionsCV: UICollectionView!
     
-    
     @IBOutlet weak var categoriesView: UIView!
     @IBOutlet weak var trendingView: UIView!
     @IBOutlet weak var emotionsView: UIView!
+    
+    private var restaurants = [Restaurant]()
+    private var categories = [Category(name: "Italiana", image: #imageLiteral(resourceName: "italian")),
+                              Category(name: "Rápida", image: #imageLiteral(resourceName: "fast")),
+                              Category(name: "Española", image: #imageLiteral(resourceName: "spanish")),
+                              Category(name: "Japonés", image: #imageLiteral(resourceName: "japan"))]
+    
+    private var emotions:[emotions] = [.angry, .normal, .normal, .happy]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +41,13 @@ class MainViewController: UIViewController {
             cView.layer.shadowOffset = .zero
             cView.layer.shadowOpacity = 0.1
         }
+        
+        // Restaurante 1.
+        let plates1 = [Plate(name: "Hamburguesa de Kobe Premium", image: #imageLiteral(resourceName: "hamburger"), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in aliquet erat, rutrum placerat lectus. Suspendisse semper quam elementum enim accumsan interdum. Vivamus sit amet sapien in ante vehicula ullamcorper. Donec eleifend luctus massa, sit amet interdum urna euismod at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut porta et urna a ultrices. Maecenas vitae hendrerit dolor, id semper erat. Nullam imperdiet tortor nulla. Nunc dignissim aliquam lorem, dictum vehicula diam pharetra eu."),
+                       Plate(name: "Hamburguesa de Buey", image: #imageLiteral(resourceName: "hamburger"), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in aliquet erat, rutrum placerat lectus. Suspendisse semper quam elementum enim accumsan interdum. Vivamus sit amet sapien in ante vehicula ullamcorper. Donec eleifend luctus massa, sit amet interdum urna euismod at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut porta et urna a ultrices. Maecenas vitae hendrerit dolor, id semper erat. Nullam imperdiet tortor nulla. Nunc dignissim aliquam lorem, dictum vehicula diam pharetra eu.")]
+        
+        self.restaurants.append(Restaurant(name: "La Flamenca de San Juan de Dios", image: #imageLiteral(resourceName: "restaurant_img"), coordinates: CLLocationCoordinate2D(latitude: 40.965006, longitude: -5.664041), plates: plates1))
+        self.restaurants.append(Restaurant(name: "Con mi guitarra lo cambio yo", image: #imageLiteral(resourceName: "restaurant_img"), coordinates: CLLocationCoordinate2D(latitude: 36.534078, longitude: -6.302024), plates: plates1))
     }
     
     override func viewDidLayoutSubviews() {
@@ -55,9 +69,9 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         switch collectionView {
-        case self.categoriesCV: return 4
-        case self.featuringCV: return 2
-        case self.emotionsCV: return 1
+        case self.categoriesCV: return self.categories.count
+        case self.featuringCV: return self.restaurants.count
+        case self.emotionsCV: return self.emotions.count
             
         default: return 0
         }
@@ -67,20 +81,23 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         switch collectionView {
             case self.categoriesCV:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoriesCell", for: indexPath) as! CategoriesCell
-                cell.backgroundColor = .systemPink
+                cell.categoryLabel.text = self.categories[indexPath.row].name
+                cell.plateImage.image = self.categories[indexPath.row].image
                 return cell
             
             case self.featuringCV:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "featuredCell", for: indexPath) as! FeaturedCell
                 cell.featuredPageControl.currentPage = indexPath.row
                 cell.featuredPageControl.numberOfPages = 2
-                cell.backgroundColor = .systemPink
+                
+                cell.featuredNameLabel.text = self.restaurants[indexPath.row].name
+                cell.featuredImage.image = self.restaurants[indexPath.row].image
                 return cell
                 
             case self.emotionsCV:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "emotionsCell", for: indexPath) as! EmotionsCell
-                cell.setEmotion(emotion: .angry)
-                //cell.emotionImage.image =  #imageLiteral(resourceName: "header_detail_2")
+                cell.setEmotion(emotion: self.emotions[indexPath.row])
+
                 return cell
                 
             default: return UICollectionViewCell()
