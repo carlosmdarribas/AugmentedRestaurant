@@ -18,13 +18,7 @@ class VirtualObject: SCNReferenceNode {
     
     /// The alignments that are allowed for a virtual object.
     var allowedAlignment: ARRaycastQuery.TargetAlignment {
-        if modelName == "sticky note" {
-            return .any
-        } else if modelName == "painting" {
-            return .vertical
-        } else {
-            return .horizontal
-        }
+        return .horizontal
     }
     
     /// Rotates the first child node of a virtual object.
@@ -64,14 +58,15 @@ class VirtualObject: SCNReferenceNode {
     }
 }
 
-extension VirtualObject {
+extension VirtualObject { 
     // MARK: Static Properties and Methods
     /// Loads all the model objects within `Models.scnassets`.
     static let availableObjects: [VirtualObject] = {
         let modelsURL = Bundle.main.url(forResource: "Models.scnassets", withExtension: nil)!
 
         let fileEnumerator = FileManager().enumerator(at: modelsURL, includingPropertiesForKeys: [])!
-
+        print(fileEnumerator)
+        
         return fileEnumerator.compactMap { element in
             let url = element as! URL
 

@@ -30,7 +30,9 @@ class EmotionDetectorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.activityIV.startAnimating()
-        self.emotionImage.image = (Int.random(in: 0..<3) == 0) ? #imageLiteral(resourceName: "happy") : #imageLiteral(resourceName: "normal")
+        let types = [#imageLiteral(resourceName: "angry"), #imageLiteral(resourceName: "normal"), #imageLiteral(resourceName: "happy")]
+        
+        self.emotionImage.image = types[Int.random(in: 0..<3)]
         self.emotionImage.alpha = 0
 
          do {
@@ -75,6 +77,10 @@ class EmotionDetectorViewController: UIViewController {
     
     @IBAction func goToPlate(_ sender: Any) {
         
+    }
+    
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 extension EmotionDetectorViewController: AVCaptureVideoDataOutputSampleBufferDelegate {}

@@ -115,7 +115,7 @@ class ViewController: UIViewController {
         }
         session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
 
-        statusViewController.scheduleMessage("FIND A SURFACE TO PLACE AN OBJECT", inSeconds: 7.5, messageType: .planeEstimation)
+        statusViewController.scheduleMessage("Busque una superficie para poner el plato.", inSeconds: 7.5, messageType: .planeEstimation)
     }
 
     // MARK: - Focus Square
@@ -125,7 +125,7 @@ class ViewController: UIViewController {
             focusSquare.hide()
         } else {
             focusSquare.unhide()
-            statusViewController.scheduleMessage("TRY MOVING LEFT OR RIGHT", inSeconds: 5.0, messageType: .focusSquare)
+            statusViewController.scheduleMessage("Intente moverse de izquierda a derecha", inSeconds: 5.0, messageType: .focusSquare)
         }
         
         // Perform ray casting only when ARKit tracking is in a good state.
@@ -159,7 +159,7 @@ class ViewController: UIViewController {
         
         // Present an alert informing about the error that has occurred.
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let restartAction = UIAlertAction(title: "Restart Session", style: .default) { _ in
+        let restartAction = UIAlertAction(title: "Reiniciar Sesión", style: .default) { _ in
             alertController.dismiss(animated: true, completion: nil)
             self.blurView.isHidden = true
             self.resetTracking()
