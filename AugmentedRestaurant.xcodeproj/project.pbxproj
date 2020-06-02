@@ -29,6 +29,17 @@
 		075F7A3D2485D2B100F8ED6D /* ViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A292485D2B000F8ED6D /* ViewController+CoachingOverlay.swift */; };
 		075F7A3E2485D2B100F8ED6D /* VirtualObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A2B2485D2B100F8ED6D /* VirtualObjectSelection.swift */; };
 		075F7A3F2485D2B100F8ED6D /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A2C2485D2B100F8ED6D /* StatusViewController.swift */; };
+		075F7A442486A54100F8ED6D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A432486A54100F8ED6D /* MainViewController.swift */; };
+		075F7A462486A55900F8ED6D /* RestauranteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A452486A55900F8ED6D /* RestauranteDetailViewController.swift */; };
+		075F7A482486A56400F8ED6D /* RestaurantPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A472486A56400F8ED6D /* RestaurantPlateViewController.swift */; };
+		075F7A4A2486A56D00F8ED6D /* EmotionDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A492486A56D00F8ED6D /* EmotionDetectorViewController.swift */; };
+		075F7A4C2486A58100F8ED6D /* RestaurantMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A4B2486A58100F8ED6D /* RestaurantMapViewController.swift */; };
+		075F7A512486A77A00F8ED6D /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A4F2486A77A00F8ED6D /* CategoriesCell.swift */; };
+		075F7A522486A77A00F8ED6D /* CategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075F7A502486A77A00F8ED6D /* CategoriesCell.xib */; };
+		075F7A562486A79B00F8ED6D /* FeaturedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A542486A79B00F8ED6D /* FeaturedCell.swift */; };
+		075F7A572486A79B00F8ED6D /* FeaturedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075F7A552486A79B00F8ED6D /* FeaturedCell.xib */; };
+		075F7A5B2486A7DD00F8ED6D /* EmotionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7A592486A7DD00F8ED6D /* EmotionsCell.swift */; };
+		075F7A5C2486A7DD00F8ED6D /* EmotionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075F7A5A2486A7DD00F8ED6D /* EmotionsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +68,17 @@
 		075F7A2B2485D2B100F8ED6D /* VirtualObjectSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectSelection.swift; sourceTree = "<group>"; };
 		075F7A2C2485D2B100F8ED6D /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		075F7A412485D41200F8ED6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		075F7A432486A54100F8ED6D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		075F7A452486A55900F8ED6D /* RestauranteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteDetailViewController.swift; sourceTree = "<group>"; };
+		075F7A472486A56400F8ED6D /* RestaurantPlateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPlateViewController.swift; sourceTree = "<group>"; };
+		075F7A492486A56D00F8ED6D /* EmotionDetectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDetectorViewController.swift; sourceTree = "<group>"; };
+		075F7A4B2486A58100F8ED6D /* RestaurantMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapViewController.swift; sourceTree = "<group>"; };
+		075F7A4F2486A77A00F8ED6D /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		075F7A502486A77A00F8ED6D /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
+		075F7A542486A79B00F8ED6D /* FeaturedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCell.swift; sourceTree = "<group>"; };
+		075F7A552486A79B00F8ED6D /* FeaturedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedCell.xib; sourceTree = "<group>"; };
+		075F7A592486A7DD00F8ED6D /* EmotionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsCell.swift; sourceTree = "<group>"; };
+		075F7A5A2486A7DD00F8ED6D /* EmotionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmotionsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +111,9 @@
 		075F7A002485C5D600F8ED6D /* AugmentedRestaurant */ = {
 			isa = PBXGroup;
 			children = (
+				075F7A4D2486A74500F8ED6D /* Cells */,
 				075F7A012485C5D600F8ED6D /* AppDelegate.swift */,
+				075F7A422486A46200F8ED6D /* VCs */,
 				075F7A402485D40F00F8ED6D /* AR */,
 				075F7A182485D2AE00F8ED6D /* ViewController.swift */,
 				075F7A072485C5D600F8ED6D /* Main.storyboard */,
@@ -165,6 +189,55 @@
 			path = AR;
 			sourceTree = "<group>";
 		};
+		075F7A422486A46200F8ED6D /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				075F7A432486A54100F8ED6D /* MainViewController.swift */,
+				075F7A452486A55900F8ED6D /* RestauranteDetailViewController.swift */,
+				075F7A472486A56400F8ED6D /* RestaurantPlateViewController.swift */,
+				075F7A492486A56D00F8ED6D /* EmotionDetectorViewController.swift */,
+				075F7A4B2486A58100F8ED6D /* RestaurantMapViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		075F7A4D2486A74500F8ED6D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				075F7A582486A7D000F8ED6D /* EmotionsCell */,
+				075F7A532486A78E00F8ED6D /* FeaturedCell */,
+				075F7A4E2486A75100F8ED6D /* CategoriesCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		075F7A4E2486A75100F8ED6D /* CategoriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				075F7A4F2486A77A00F8ED6D /* CategoriesCell.swift */,
+				075F7A502486A77A00F8ED6D /* CategoriesCell.xib */,
+			);
+			path = CategoriesCell;
+			sourceTree = "<group>";
+		};
+		075F7A532486A78E00F8ED6D /* FeaturedCell */ = {
+			isa = PBXGroup;
+			children = (
+				075F7A542486A79B00F8ED6D /* FeaturedCell.swift */,
+				075F7A552486A79B00F8ED6D /* FeaturedCell.xib */,
+			);
+			path = FeaturedCell;
+			sourceTree = "<group>";
+		};
+		075F7A582486A7D000F8ED6D /* EmotionsCell */ = {
+			isa = PBXGroup;
+			children = (
+				075F7A592486A7DD00F8ED6D /* EmotionsCell.swift */,
+				075F7A5A2486A7DD00F8ED6D /* EmotionsCell.xib */,
+			);
+			path = EmotionsCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,10 +297,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				075F7A0E2485C5D800F8ED6D /* LaunchScreen.storyboard in Resources */,
+				075F7A572486A79B00F8ED6D /* FeaturedCell.xib in Resources */,
 				075F7A392485D2B100F8ED6D /* Models.scnassets in Resources */,
 				075F7A0B2485C5D800F8ED6D /* Assets.xcassets in Resources */,
 				075F7A3B2485D2B100F8ED6D /* Assets.xcassets in Resources */,
 				075F7A092485C5D600F8ED6D /* Main.storyboard in Resources */,
+				075F7A522486A77A00F8ED6D /* CategoriesCell.xib in Resources */,
+				075F7A5C2486A7DD00F8ED6D /* EmotionsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,19 +316,27 @@
 			files = (
 				075F7A352485D2B100F8ED6D /* ViewController+ARSCNViewDelegate.swift in Sources */,
 				075F7A3E2485D2B100F8ED6D /* VirtualObjectSelection.swift in Sources */,
+				075F7A4A2486A56D00F8ED6D /* EmotionDetectorViewController.swift in Sources */,
 				075F7A362485D2B100F8ED6D /* VirtualObjectLoader.swift in Sources */,
+				075F7A4C2486A58100F8ED6D /* RestaurantMapViewController.swift in Sources */,
 				075F7A2F2485D2B100F8ED6D /* ViewController.swift in Sources */,
 				075F7A302485D2B100F8ED6D /* Utilities.swift in Sources */,
+				075F7A462486A55900F8ED6D /* RestauranteDetailViewController.swift in Sources */,
+				075F7A5B2486A7DD00F8ED6D /* EmotionsCell.swift in Sources */,
 				075F7A022485C5D600F8ED6D /* AppDelegate.swift in Sources */,
 				075F7A042485C5D600F8ED6D /* SceneDelegate.swift in Sources */,
+				075F7A482486A56400F8ED6D /* RestaurantPlateViewController.swift in Sources */,
 				075F7A3D2485D2B100F8ED6D /* ViewController+CoachingOverlay.swift in Sources */,
 				075F7A342485D2B100F8ED6D /* VirtualObjectInteraction.swift in Sources */,
+				075F7A512486A77A00F8ED6D /* CategoriesCell.swift in Sources */,
 				075F7A322485D2B100F8ED6D /* ThresholdPanGesture.swift in Sources */,
 				075F7A332485D2B100F8ED6D /* ViewController+Actions.swift in Sources */,
 				075F7A2D2485D2B100F8ED6D /* FocusSquareSegment.swift in Sources */,
 				075F7A312485D2B100F8ED6D /* ViewController+ObjectSelection.swift in Sources */,
 				075F7A382485D2B100F8ED6D /* VirtualObjectARView.swift in Sources */,
 				075F7A372485D2B100F8ED6D /* VirtualObject.swift in Sources */,
+				075F7A442486A54100F8ED6D /* MainViewController.swift in Sources */,
+				075F7A562486A79B00F8ED6D /* FeaturedCell.swift in Sources */,
 				075F7A3F2485D2B100F8ED6D /* StatusViewController.swift in Sources */,
 				075F7A2E2485D2B100F8ED6D /* FocusSquare.swift in Sources */,
 			);
